@@ -20,4 +20,20 @@ public class Block {
         String hash = StringUtil.applySha256(previousHash + Long.toString(timestamp) + ID);
         return hash;
     }
+
+    public String getHash() {
+        return this.hash;
+    }
+
+    public String getPreviousHash() {
+        return this.previousHash;
+    }
+
+    public int getID() {
+        return this.ID;
+    }
+
+    public long getTimestamp() {
+        return timestamp;
+    }
 }
